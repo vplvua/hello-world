@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <script>
+    
+    let login = prompt(`Who is it?`);
+    
+    if ( !login || login == `` ) {
+      alert(`cancel`);
+    } else if ( login == 'Admin') {
+      
+        let pass = prompt(`Enter a password`);
+        
+        if (pass === `i am a boss`) {
+            alert(`Hello boss!`);
+          } else if ( !pass || pass == ``) {
+              alert(`cancel`);
+            }
+          else {
+            alert(`Wrong password!`);
+          }
+
+    } else {
+      alert(`I do not know you!`);
+    }
+
+  </script>
+
+</body>
+</html>
